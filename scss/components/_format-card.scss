@@ -1,0 +1,33 @@
+
+
+.format-card {
+  position: relative;border-radius: 16px;
+  padding: 24px;
+  height: 444px;
+  max-width: 349px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+  color: var(--color-primary-light);
+  background-image: linear-gradient(180deg,
+      rgba(49, 38, 26, 0) 55.21%,
+      rgba(49, 38, 26, 0.71) 72.92%,
+      var(--color-primary-dark) 100%);
+}
+
+
+.formats-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.format-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

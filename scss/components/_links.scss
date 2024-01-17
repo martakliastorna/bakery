@@ -1,0 +1,9 @@
+.menu-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: var(--color-primary);
+}

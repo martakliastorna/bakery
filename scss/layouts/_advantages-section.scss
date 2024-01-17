@@ -1,0 +1,33 @@
+.advantages-section {
+  background-color: var(--color-primary);
+}
+
+.advantages-section__list {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media screen and (max-width: 780px) {
+.advantages-section {
+    background-color: var(--color-primary-light);
+  }
+.advantages-section__list {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-primary-dark);
+  background-color: var(--color-brand-light);
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px;
+  margin: 40px 0;
+  border-radius: 24px;
+
+  
+}
+
+}

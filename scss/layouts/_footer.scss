@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-image: url(../images/footer-background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.footer::before {
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url(../images/decor-bread-small.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(../images/decor-bread-large.png);
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.address-list__social a {
+margin-right: 16px;
+margin-top: 16px;
+}
+
+.footer-logo {
+  flex-grow: 1;
+}
+
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.contact {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.pravo {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-primary);
+}
+
+@media screen and (max-width: 780px) {
+
+  .footer-container,
+  .footer-nav,
+  .footer-address {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 32px;
+  }
+
+  .footer-menu li,
+  .address-list li {
+    margin-bottom: 18px;
+  }
+
+    .footer::before {
+      width: 180px;
+      height: 200px;
+      left: 0;
+      top: 0;
+      background-image: url(../images/decorbread-mini-1.png);
+    }
+  
+    .footer::after {
+      width: 110px;
+      height: 120px;
+      right: -8px;
+      bottom: -28px;
+      background-image: url(../images/decorbread-mini-2.png);
+    }
+}

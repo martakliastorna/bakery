@@ -1,0 +1,45 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform .3s;
+  z-index: 2;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 48px;
+    right: 24px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__container{
+    margin-top: 48px;
+    margin-left: 24px;
+  }
+
+  &__img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+  &__list {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-bottom: 16px;
+  }
+      &__list:hover {
+    color: var(--color-primary);
+  }
+}

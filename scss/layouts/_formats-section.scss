@@ -1,0 +1,30 @@
+.formats-title {
+  margin-bottom: 80px;
+  @media screen and (max-width: 780px) {
+      margin: 0 auto 24px;
+    }
+}
+
+.formats-slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.format-slider__button {
+@media screen and (max-width: 780px) {
+  display: none;
+  } }
+  
+.formats__container {
+overflow: hidden;
+
+&-list {
+margin-bottom: 24px;
+}
+}
+
+.formats-name {
+  font-size: 24px;
+  font-weight: 600;
+}
